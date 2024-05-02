@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: seagreen;
+}
+
+.main {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 80%;
+  height: 50vh;
+  background-color: sandybrown;
+  border-radius: 0.1rem;
+  padding: 3rem;
+}
+
+/* *************************************** */
+/* End of boiler plate */
+/* ************************************* */
+
+/* CSS Animations Props*/
+/* @keyframes
+animation-name
+animation-duration
+animation-delay
+animation-iteration-count
+animation-direction
+animation-timing-function
+animation-fill-mode
+animation */
+
+/* An animation lets an element gradually change from one style to another. */
+
+/* You can change as many CSS properties you want, as many times as you want. */
+
+/* To use CSS animation, you must first specify some keyframes for the animation. */
+
+@keyframes changeColor {
+  0% {
+    background-color: aquamarine;
+    width: 75px;
+    height: 75px;
+  }
+
+  25% {
+    background-color: aqua;
+  }
+
+  50% {
+    background-color: antiquewhite;
+  }
+
+  100% {
+    background-color: cadetblue;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.box {
+  width: 75px;
+  height: 75px;
+  background-color: aquamarine;
+  animation-name: changeColor;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
